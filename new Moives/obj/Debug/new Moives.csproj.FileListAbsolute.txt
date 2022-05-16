@@ -1,0 +1,7 @@
+C:\Users\abdel\source\repos\new Moives\bin\new Moives.dll.config
+C:\Users\abdel\source\repos\new Moives\bin\new Moives.dll
+C:\Users\abdel\source\repos\new Moives\bin\new Moives.pdb
+C:\Users\abdel\source\repos\new Moives\obj\Debug\new Moives.csproj.AssemblyReference.cache
+C:\Users\abdel\source\repos\new Moives\obj\Debug\new Moives.csproj.CoreCompileInputs.cache
+C:\Users\abdel\source\repos\new Moives\obj\Debug\new Moives.dll
+C:\Users\abdel\source\repos\new Moives\obj\Debug\new Moives.pdb
