@@ -5,3 +5,10 @@ C:\Users\abdel\source\repos\new Moives\obj\Debug\new Moives.csproj.AssemblyRefer
 C:\Users\abdel\source\repos\new Moives\obj\Debug\new Moives.csproj.CoreCompileInputs.cache
 C:\Users\abdel\source\repos\new Moives\obj\Debug\new Moives.dll
 C:\Users\abdel\source\repos\new Moives\obj\Debug\new Moives.pdb
+E:\some app\movie-rentes\new Moives\bin\new Moives.dll.config
+E:\some app\movie-rentes\new Moives\bin\new Moives.dll
+E:\some app\movie-rentes\new Moives\bin\new Moives.pdb
+E:\some app\movie-rentes\new Moives\obj\Debug\new Moives.csproj.AssemblyReference.cache
+E:\some app\movie-rentes\new Moives\obj\Debug\new Moives.csproj.CoreCompileInputs.cache
+E:\some app\movie-rentes\new Moives\obj\Debug\new Moives.dll
+E:\some app\movie-rentes\new Moives\obj\Debug\new Moives.pdb
