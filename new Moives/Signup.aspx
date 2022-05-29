@@ -128,7 +128,6 @@
 						<asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server"
 							ControlToValidate="username" ErrorMessage="wrong username"
 							ValidationExpression="\w{5,10}\d?" ForeColor="Black"></asp:RegularExpressionValidator>
-					    <asp:Label ID="usernamemsg" runat="server"></asp:Label>
 					</div>
 
 					<div class="form-controller">
@@ -193,6 +192,7 @@
 													<asp:ListItem Value="M">male</asp:ListItem>
 													<asp:ListItem Value="F">Female</asp:ListItem>
 												</asp:RadioButtonList>
+					    <asp:Label ID="usernamemsg" runat="server"></asp:Label>
 											</div>
 										</div>
 

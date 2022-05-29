@@ -42,7 +42,10 @@ namespace new_Moives
                     usernamemsg.Text = "DATABASE ERROR";
                 }
             }
-
+            catch
+            {
+                usernamemsg.Text = "!!!!!!!!!!!!!!!";
+            }
 
         }
 
