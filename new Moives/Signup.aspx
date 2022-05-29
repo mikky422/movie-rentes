@@ -38,6 +38,7 @@
 				align-items: center;
 				justify-content: center;
 				margin: 20px 0;
+				margin-top:50px;
 
 			}
 
@@ -127,10 +128,11 @@
 						<asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server"
 							ControlToValidate="username" ErrorMessage="wrong username"
 							ValidationExpression="\w{5,10}\d?" ForeColor="Black"></asp:RegularExpressionValidator>
+					    <asp:Label ID="usernamemsg" runat="server"></asp:Label>
 					</div>
 
 					<div class="form-controller">
-						<asp:TextBox placeholder="password" ID="password" runat="server" TextMode="Password" OnTextChanged="password_TextChanged" >
+						<asp:TextBox placeholder="password" ID="password" runat="server" TextMode="Password" >
 						</asp:TextBox>
 						<asp:RequiredFieldValidator ControlToValidate="password" ID="RequiredFieldValidator2"
 							runat="server" ErrorMessage="RequiredFieldValidator" ForeColor="Black">
@@ -142,13 +144,12 @@
 
 					<--confirmpassword-->
 						<div class="form-controller">
-							<asp:TextBox placeholder="Confirm password" ID="confirmpassword" runat="server">
+							<asp:TextBox placeholder="Confirm password" ID="confirmpassword" runat="server" TextMode="Password">
 							</asp:TextBox>
+                            <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="confirmpassword" ControlToValidate="password" ErrorMessage="Password must match" Display="Dynamic"></asp:CompareValidator>
 							<asp:RequiredFieldValidator ControlToValidate="confirmpassword" ID="RequiredFieldValidator3"
 								runat="server" ErrorMessage="RequiredFieldValidator" ForeColor="Black">
 							</asp:RequiredFieldValidator>
-							<%--<asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server"
-								ControlToValidate="confirmpassword" ErrorMessage="Wrong Password" ForeColor="Black"></asp:RegularExpressionValidator>--%>
 						</div>
 						<--firstname-->
 							<div class="form-controller">
