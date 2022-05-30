@@ -96,7 +96,7 @@
 				<form id="form1" runat="server">
 					<div class="form-controller">
 						<asp:TextBox placeholder="username" ID="txtusername" runat="server"
-							OnTextChanged="username_TextChanged"></asp:TextBox>
+							></asp:TextBox>
 					</div>
 
 					<div class="form-controller">
@@ -105,6 +105,7 @@
 					</div>
 					<div class="form-controller">
 						<asp:Button ID="Signin" runat="server" Text="login" OnClick="Signin_Click"  />
+					    <asp:Label ID="errormsg" runat="server" ForeColor="Red"></asp:Label>
 					</div>
 				</form>
 			</div>

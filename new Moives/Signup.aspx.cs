@@ -20,9 +20,8 @@ namespace new_Moives
         protected void Signup_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection();
-
-       
             con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|member.mdf;Integrated Security=True";
+            
             String z = String.Format("INSERT INTO member VALUES('{0}','{1}','{2}','{3}')", username.Text,emailaddress.Text, password.Text, RadioButtonList1.SelectedValue);
             SqlCommand cmd = new SqlCommand(z, con);
             try
