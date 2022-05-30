@@ -44,7 +44,7 @@ namespace new_Moives
             }
             catch
             {
-                usernamemsg.Text = "!!!!!!!!!!!!!!!";
+                usernamemsg.Text = "Unexpected error";
             }
 
         }
