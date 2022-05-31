@@ -11,7 +11,7 @@ namespace new_Moives
 {
 
 
-    public partial class UserMaster
+    public partial class AdminMaster
     {
 
         /// <summary>
@@ -42,13 +42,13 @@ namespace new_Moives
         protected global::System.Web.UI.WebControls.Label usernameheader;
 
         /// <summary>
-        /// userhome control.
+        /// adminhome control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink userhome;
+        protected global::System.Web.UI.WebControls.HyperLink adminhome;
 
         /// <summary>
         /// accountsettings control.

@@ -57,13 +57,13 @@
                                     <table class="auto-style1">
                                         <tr>
                                             <td class="auto-style7">
-                                                <asp:HyperLink ID="userhome" runat="server" NavigateUrl="~/AdminHome.aspx">Admin Home</asp:HyperLink>
+                                                <asp:HyperLink ID="adminhome" runat="server" NavigateUrl="~/AdminHome.aspx">Admin Home</asp:HyperLink>
                                             </td>
                                             <td class="auto-style7">
                                                 <asp:HyperLink ID="accountsettings" runat="server" NavigateUrl="~/AccountSettings.aspx">Account Settings</asp:HyperLink>
                                             </td>
                                             <td>
-                                                <asp:HyperLink ID="rentals" runat="server" NavigateUrl="~/UserHome.aspx">Rentals</asp:HyperLink>
+                                                <asp:HyperLink ID="accounts" runat="server" NavigateUrl="~/Accounts.aspx">Accounts</asp:HyperLink>
                                             </td>
                                             <td>&nbsp;</td>
                                         </tr>
