@@ -32,7 +32,7 @@
                         <asp:BoundField DataField="Movie_Name" HeaderText="Movie_Name" SortExpression="Movie_Name" />
                         <asp:BoundField DataField="price" HeaderText="price" SortExpression="price" />
                         <asp:BoundField DataField="Genre" HeaderText="Genre" SortExpression="Genre" />
-                        <asp:ButtonField ButtonType="Button" CommandName="Delete" HeaderText="Remove Movie" ShowHeader="True" Text="Delete" />
+                        <asp:CommandField ButtonType="Button" HeaderText="Edit" ShowDeleteButton="True" ShowEditButton="True" ShowHeader="True" ShowSelectButton="True" />
                     </Columns>
                     <FooterStyle BackColor="#99CCCC" ForeColor="#003399" />
                     <HeaderStyle BackColor="#003399" Font-Bold="True" ForeColor="#CCCCFF" />

@@ -17,7 +17,8 @@
                         <asp:BoundField DataField="MemberID" HeaderText="MemberID" ReadOnly="True" SortExpression="MemberID" />
                         <asp:BoundField DataField="email" HeaderText="email" SortExpression="email" />
                         <asp:BoundField DataField="gender" HeaderText="gender" SortExpression="gender" />
-                        <asp:ButtonField ButtonType="Button" CommandName="Delete" HeaderText="Remove User" ShowHeader="True" Text="Delete" />
+                        <asp:BoundField DataField="isadmin" HeaderText="isadmin" SortExpression="isadmin" />
+                        <asp:CommandField ButtonType="Button" HeaderText="Edit" ShowDeleteButton="True" ShowEditButton="True" ShowHeader="True" ShowSelectButton="True" />
                     </Columns>
                     <EditRowStyle BackColor="#7C6F57" />
                     <FooterStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
@@ -30,23 +31,27 @@
                     <SortedDescendingCellStyle BackColor="#D4DFE1" />
                     <SortedDescendingHeaderStyle BackColor="#15524A" />
                 </asp:GridView>
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [member] WHERE [MemberID] = @original_MemberID AND [email] = @original_email AND [gender] = @original_gender" InsertCommand="INSERT INTO [member] ([MemberID], [email], [gender]) VALUES (@MemberID, @email, @gender)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT [MemberID], [email], [gender] FROM [member] ORDER BY [MemberID]" UpdateCommand="UPDATE [member] SET [email] = @email, [gender] = @gender WHERE [MemberID] = @original_MemberID AND [email] = @original_email AND [gender] = @original_gender">
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [member] WHERE [MemberID] = @original_MemberID AND [email] = @original_email AND [gender] = @original_gender AND (([isadmin] = @original_isadmin) OR ([isadmin] IS NULL AND @original_isadmin IS NULL))" InsertCommand="INSERT INTO [member] ([MemberID], [email], [gender], [isadmin]) VALUES (@MemberID, @email, @gender, @isadmin)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT [MemberID], [email], [gender], [isadmin] FROM [member] ORDER BY [MemberID]" UpdateCommand="UPDATE [member] SET [email] = @email, [gender] = @gender, [isadmin] = @isadmin WHERE [MemberID] = @original_MemberID AND [email] = @original_email AND [gender] = @original_gender AND (([isadmin] = @original_isadmin) OR ([isadmin] IS NULL AND @original_isadmin IS NULL))">
                     <DeleteParameters>
                         <asp:Parameter Name="original_MemberID" Type="String" />
                         <asp:Parameter Name="original_email" Type="String" />
                         <asp:Parameter Name="original_gender" Type="String" />
+                        <asp:Parameter Name="original_isadmin" Type="String" />
                     </DeleteParameters>
                     <InsertParameters>
                         <asp:Parameter Name="MemberID" Type="String" />
                         <asp:Parameter Name="email" Type="String" />
                         <asp:Parameter Name="gender" Type="String" />
+                        <asp:Parameter Name="isadmin" Type="String" />
                     </InsertParameters>
                     <UpdateParameters>
                         <asp:Parameter Name="email" Type="String" />
                         <asp:Parameter Name="gender" Type="String" />
+                        <asp:Parameter Name="isadmin" Type="String" />
                         <asp:Parameter Name="original_MemberID" Type="String" />
                         <asp:Parameter Name="original_email" Type="String" />
                         <asp:Parameter Name="original_gender" Type="String" />
+                        <asp:Parameter Name="original_isadmin" Type="String" />
                     </UpdateParameters>
                 </asp:SqlDataSource>
             </td>
