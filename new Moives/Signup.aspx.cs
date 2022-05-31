@@ -22,7 +22,7 @@ namespace new_Moives
             SqlConnection con = new SqlConnection();
             con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|member.mdf;Integrated Security=True";
             
-            String z = String.Format("INSERT INTO member VALUES('{0}','{1}','{2}','{3}')", username.Text,emailaddress.Text, password.Text, RadioButtonList1.SelectedValue);
+            String z = String.Format("INSERT INTO member VALUES('{0}','{1}','{2}','{3}','{4}')", username.Text,emailaddress.Text, password.Text, RadioButtonList1.SelectedValue, "0");
             SqlCommand cmd = new SqlCommand(z, con);
             try
             {

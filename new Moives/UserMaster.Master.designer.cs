@@ -48,7 +48,7 @@ namespace new_Moives
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink adminhome;
+        protected global::System.Web.UI.WebControls.HyperLink userhome;
 
         /// <summary>
         /// accountsettings control.

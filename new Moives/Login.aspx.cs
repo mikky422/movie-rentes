@@ -33,7 +33,26 @@ namespace new_Moives
 
             if (reader.Read())
             {
-                Response.Redirect("~/Home page .aspx");
+
+                string isadmin = (string)reader.GetValue(4);
+
+                //create cookie
+                HttpCookie coco = new HttpCookie("userinfo");
+                coco.Values.Add("username", txtusername.Text);
+                coco.Values.Add("password", txtpassword.Text);
+                coco.Values.Add("isadmin", isadmin);
+                coco.Expires = DateTime.Now.AddDays(1);
+                //add cookie to browser
+                Response.Cookies.Add(coco);
+
+                if (isadmin == "1")
+                {
+                    Response.Redirect("~/AdminHome.aspx");
+                }
+                else
+                {
+                    Response.Redirect("~/UserHome.aspx");
+                }
             }
             else
             {

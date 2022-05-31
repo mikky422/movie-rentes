@@ -11,7 +11,14 @@ namespace new_Moives
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string username = "";
 
+            if (Request.Cookies["userinfo"] != null)
+            {
+                username = Request.Cookies["userinfo"].Values["username"];
+            }
+
+            usernameheader.Text = "Welcome " + username;
         }
     }
 }

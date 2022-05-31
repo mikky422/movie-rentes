@@ -145,7 +145,7 @@
 						<div class="form-controller">
 							<asp:TextBox placeholder="Confirm password" ID="confirmpassword" runat="server" TextMode="Password">
 							</asp:TextBox>
-                            <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="confirmpassword" ControlToValidate="password" ErrorMessage="Password must match" Display="Dynamic"></asp:CompareValidator>
+                            <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="confirmpassword" ControlToValidate="password" ErrorMessage="Password must match" Display="Dynamic" ForeColor="Red"></asp:CompareValidator>
 							<asp:RequiredFieldValidator ControlToValidate="confirmpassword" ID="RequiredFieldValidator3"
 								runat="server" ErrorMessage="RequiredFieldValidator" ForeColor="Black">
 							</asp:RequiredFieldValidator>
