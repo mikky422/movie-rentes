@@ -61,10 +61,10 @@
                                                 <asp:HyperLink ID="userhome" runat="server" NavigateUrl="~/UserHome.aspx">User Home</asp:HyperLink>
                                             </td>
                                             <td class="auto-style7">
-                                                <asp:HyperLink ID="accountsettings" runat="server" NavigateUrl="~/UserHome.aspx">Account Settings</asp:HyperLink>
+                                                <asp:HyperLink ID="accountsettings" runat="server" NavigateUrl="~/AccountSettings.aspx">Account Settings</asp:HyperLink>
                                             </td>
                                             <td>
-                                                <asp:HyperLink ID="rentals" runat="server" NavigateUrl="~/UserHome.aspx">Rentals</asp:HyperLink>
+                                                <asp:HyperLink ID="rentals" runat="server" NavigateUrl="~/Rentals.aspx">Rentals</asp:HyperLink>
                                             </td>
                                             <td>&nbsp;</td>
                                         </tr>
